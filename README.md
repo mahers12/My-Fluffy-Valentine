@@ -28,9 +28,9 @@ My-Fluffy-Valentine is a webpage meant to match future pet parents with shelter 
 
 ## **_Future Updates:_**
 
-- [] Allow users to create login information to avoid having to entre their information everytime they browse the site.
-- [] Create a simple background check to vet applicants.
-- [] Add a pay adoption fee option.
+- [ ] Allow users to create login information to avoid having to entre their information everytime they browse the site.
+- [ ] Create a simple background check to vet applicants.
+- [ ] Add a pay adoption fee option.
 
 ## **_Credits:_**
 
