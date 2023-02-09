@@ -2,7 +2,7 @@
 
 ### By Sarah Maher
 
-## Getting Started:
+## **_Getting Started:_**
 
 ![Deployed Project](https://github.com/mahers12/My-Fluffy-Valentine) ||  ![Trello](https://trello.com/b/aBXh0y6X/my-fluffy-valentine)
 
@@ -19,21 +19,21 @@ My-Fluffy-Valentine is a webpage meant to match future pet parents with shelter 
 - HTML
 - CSS
 
-## Final Project Photos:
+## **_Final Project Photos:_**
 
 ![Cute_Pets](https://www.readersdigest.com.au/wp-content/uploads/2021/02/05-puppy-and-kitten-GettyImages-71919537.jpg)
 
 
 ![Cute_Pets2](https://www.rd.com/wp-content/uploads/2021/03/GettyImages-987491478.jpg)
 
-## Future Updates
+## **_Future Updates:_**
 
 - [] Allow users to create login information to avoid having to entre their information everytime they browse the site.
 - [] Create a simple background check to vet applicants.
 - [] Add a pay adoption fee option.
 
-## Credits
+## **_Credits:_**
 
-## links to Social Media
+## **_links to Social Media_**
 
 [Github](https://github.com/mahers12)|| [Linkedin](https://www.linkedin.com/in/sarah-maher-8a6865255/)
