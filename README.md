@@ -4,7 +4,7 @@
 
 ## Getting Started:
 
-![Deployed Project](https://github.com/mahers12/My-Fluffy-Valentine) || ![Trello](https://trello.com/b/aBXh0y6X/my-fluffy-valentine)
+![Deployed Project](https://github.com/mahers12/My-Fluffy-Valentine) ||  ![Trello](https://trello.com/b/aBXh0y6X/my-fluffy-valentine)
 
 Are you tired of scrolling through troves of online matches without having any luck? Are you exhausted at the mere idea of getting ready for yet another mediocre date? Are you fretting spending another night on the couch alone? Well, I got just the solution for you. Find true love this valentine's day by adopting a furry friend. valentine's day is the perfect day to show some love and help rescue animals in need. Because Scrappy and Meowise should not be alone on valentine's day and neither should you.
 
