@@ -22,6 +22,8 @@ My-Fluffy-Valentine is a webpage meant to match future pet parents with shelter 
 ## Final Project Photos:
 
 ![Cute_Pets](https://www.readersdigest.com.au/wp-content/uploads/2021/02/05-puppy-and-kitten-GettyImages-71919537.jpg)
+
+
 ![Cute_Pets2]([https://www.hillspet.com/content/dam/cp-sites/hills/hills-pet/en_us/exported/pet-care/Skyword/images/basset-hound-sleeps-on-sleeping-tabby-cat_308513_ref.png](https://www.hillspet.com/content/dam/cp-sites/hills/hills-pet/en_us/exported/pet-care/Skyword/images/basset-hound-sleeps-on-sleeping-tabby-cat_308513_ref.png))
 
 ## Future Updates
