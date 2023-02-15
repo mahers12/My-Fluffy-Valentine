@@ -4,6 +4,9 @@ const createPet = async (req, res) => {
   try {
     const pet = await new Pet(req.body)
     await pet.save()
+    const neighborhood = await Neighborhood.findById(pet.neighborhood)
+    neighborhood.pets.push(pet._id)
+    await neighborhood.save()
     return res.status(201).json({
       pet
     })

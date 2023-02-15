@@ -18,7 +18,13 @@ const Neighborhood = new Schema(
     shelter: {
       type: String,
       required: true
-    }
+    },
+    pets: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Pet'
+      }
+    ]
   },
   { timestamps: true }
 )

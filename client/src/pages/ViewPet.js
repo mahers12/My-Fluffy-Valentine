@@ -1,22 +1,39 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useParams, Link } from 'react-router-dom'
+import axios from 'axios'
+import Pet from '../components/Pet'
+const API_KEY = process.env.REACT_APP_API_KEY
 
-const ViewPet = (props) => {
-  const [ViewPet, setViewPet] = useState(null)
+const ViewPet = () => {
+  const [pets, setPets] = useState([])
 
-  useEffect(() => {}, [petId])
+  let { neighborhoodId } = useParams()
+
+  useEffect(() => {
+    let isCancelled = false
+    const getPetByNeiborhood = async () => {
+      const response = await axios
+        .get
+        // `https://api.rawg.io/api/games?page_size=40&genres=${genreId}&key=${API_KEY}`
+        ()
+      if (!isCancelled) {
+        setPets(response.data.results)
+      }
+    }
+   getPetByNeiborhood()
+    return () => {
+      isCancelled = true
+    }
+  }, [neighborhoodId])
 
   return (
-    <div className="pet-information">
-      <section className="image-container">
-        <div></div>
-      </section>
-      <section className="details">
-        <div className="flex-row space"></div>
-        <div>
-          <h3></h3>
-        </div>
-      </section>
-    </div>
+    <div className="container-grid">
+      {pets.map((pet) => (
+        // <Link to={`/games/details/${game.id}`} key={game.id}>
+        //   <GameCard {...game} image={game.background_image} />
+    //     </Link>
+    //   ))}
+    // </div>
   )
 }
 

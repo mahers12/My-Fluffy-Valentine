@@ -1,26 +1,33 @@
-import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import { useState } from 'react'
 import './App.css'
-import axios from 'axios'
-
-const onClickButton = async () => {
-  const response = await axios.get(`${process.env.REACT_APP_BACKEND_ROUTE}/api`)
-  return response
-}
+import Home from './pages/Home'
+import NavBar from './components/NavBar'
+import ViewPet from './pages/ViewPet'
+import Neighborhoods from './pages/Neighborhoods'
 
 const App = () => {
-  const [result, setResult] = useState(null)
+  const [pets, setPets] = useState()
+  const [newPet, setNewPet] = useState({
+    name: '',
+    description: '',
+    image: '',
+    type: '',
+    age: '',
+    neighborhood: ''
+  })
 
   return (
-    <div>
-      <button
-        onClick={async () => {
-          const res = await onClickButton()
-          setResult(res?.data.data)
-        }}
-      >
-        Test Me
-      </button>
-      <div>{result && <span>{result}</span>}</div>
+    <div className="App">
+      <header>
+        <NavBar />
+      </header>
+      <main>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+        </Routes>
+      </main>
     </div>
   )
 }
