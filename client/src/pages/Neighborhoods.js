@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Neighborhood from '../components/Neighborhood'
+
 const Neighborhoods = (props) => {
   return (
     <div className="neighborhoods-content">
