@@ -1,17 +1,18 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 
 const PetDetails = (props) => {
-  const { id } = useParams()
-  const pet = props.pets.filter((animal) => animal._id === id)
+  const { id, index } = useParams()
+  const pet = props.pets.filter((animal) => animal._id === id)[0]
   console.log(pet)
   return (
     <div className="grid">
       <div className="img-wrapper">
-        <img src={pet[0].image} alt="PetDetails" />
+        <img src={pet.image} alt="PetDetails" />
       </div>
       <div className="info-wrapper flex-row">
-        <h3>{pet[0].name}</h3>
+        <h3>{pet.name}</h3>
       </div>
+      <Link to={`/pets/${id}/${index}/adopt`}> Start Adoption Process</Link>
     </div>
   )
 }

@@ -1,78 +1,41 @@
 import { useState } from 'react'
 import axios from 'axios'
+import { useParams } from 'react-router-dom'
 
-const UpdatePet = ({pets}) => {
-  const initialState = { 
-    name: '', 
-    description: '',
-    image: '',
-    type: '',
-    age: '',
-    neighborhood: ''
-  }
-
-  const [petState, setPetState] = useState(pets)
+const UpdatePet = (props) => {
+  let { id, index } = useParams()
+  const pet = props.pets.filter((animal) => animal._id === id)[0]
+  const [petName, setPetName] = useState({ name: pet.name })
 
   const handleChange = (event) => {
-    setPetState({ ...petState, [event.target.id]: event.target.value })
+    setPetName({ name: event.target.value })
   }
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    await axios.post('http://localhost:3001/api/pets/${pet._id}', petState)
-    getPets()
+    let response = await axios.put(
+      `http://localhost:3001/api/pets/${id}`,
+      petName
+    )
+    let petsArray = [...props.pets]
+    petsArray.splice(index, 1, response.data)
+    props.setPets(petsArray)
+    setPetName({ name: '' })
   }
 
- 
   return (
     <form onSubmit={handleSubmit}>
       <div className="col">
-      <label htmlFor="add Pet">Name:</label>
-      <input
-        id="name"
-        type="text"
-        onChange={handleChange}
-        value={petState.name}
-      />
-      </div>
-      <div className="col">
-<label htmlFor="description">Description</label>
-  <textarea
-    id="description"
-    cols="30"
-    rows="0"
-    onChange={handleChange}
-    value={petState.description}></textarea>
-
+        <label htmlFor="name">Current Name:</label>
+        <input
+          id="name"
+          type="text"
+          onChange={handleChange}
+          value={petName.name}
+        />
       </div>
 
-      <div className="col">
-<label htmlFor="type">Type:</label>
-  <input
-    type="text"
-    id="Type"
-    onChange={handleChange}
-    value={petState.type}
-  />
-  </div>
-<label htmlFor="age">Age:</label>
-  <input
-    type="number"
-    id="Age"
-    onChange={handleChange}
-    value={petState.age}
-  />Í
-<div className="col">
-<label htmlFor="neighborhood">Neighborhood:</label>
-  <input
-    type="text"
-    id="Neighborhood"
-    onChange={handleChange}
-    value={petState.neighborhood}
-    />
-</div>
-
-      <button type="submit">Update Pet</button>
+      <button type="submit">Rename Your Pet</button>
     </form>
   )
 }

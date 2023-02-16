@@ -1,37 +1,42 @@
 import { useState } from 'react'
 import axios from 'axios'
+import { useParams, useNavigate } from 'react-router-dom'
 
 const AdoptPet = (props) => {
-//   const initialState = { 
-//     name: '', 
-//     description: '',
-//     image: '',
-//     type: '',
-//     age: '',
-//     neighborhood: ''
-//   }
+  let { id, index } = useParams()
+  const pet = props.pets.filter((animal) => animal._id === id)[0]
+  const [petStatus, setPetStatus] = useState({ name: pet.name })
 
-//   const [petState, setPetState] = useState(initialState)
+  const handleChange = (event) => {
+    useNavigate()
+  }
+
   const handleSubmit = async (event) => {
     event.preventDefault()
-    await axios.delete('http://localhost:3001/api/pet')
-    // console.log(petState)
-    // setPetState(initialState)
+    let response = await axios.delete(
+      `http://localhost:3001/api/pets/${id}`,
+      petName
+    )
+    let petsArray = [...props.pets]
+    petsArray.splice(index, 1)
+    props.setPetStatus(petsArray)
+    setPetStatus()
   }
 
   return (
     <form onSubmit={handleSubmit}>
       <div className="col">
-      <label htmlFor="adopt pet">Adopt Pet:</label>
-      <input
-        id="name"
-        type="text"
-        // value={petState.name}
-      />
+        <label htmlFor="name">Current Name:</label>
+        <input
+          id="name"
+          type="text"
+          onChange={handleChange}
+          value={petName.name}
+        />
       </div>
-      <button type="submit">Adopt Pet</button>
 
+      <button type="submit">Rename Your Pet</button>
     </form>
   )
 }
-export default AdoptPet
+export default UpdatePet

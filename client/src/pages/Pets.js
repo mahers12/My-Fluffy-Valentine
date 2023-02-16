@@ -8,10 +8,10 @@ const Pets = (props) => {
       <div>
         <h1>Pets Available for Adoption</h1>
       </div>
-      <AddPet />
+      <AddPet neighborhoods={props.neighborhoods} />
       <section className="details">
-        {props.pets.map((pet) => (
-          <Link to={`/pets/${pet._id}`} key={pet._id}>
+        {props.pets.map((pet, index) => (
+          <Link to={`/pets/${pet._id}/${index}`} key={pet._id}>
             <Pet pet={pet} />
           </Link>
         ))}
