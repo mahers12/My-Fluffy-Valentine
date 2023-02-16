@@ -26,21 +26,27 @@ const AddPet = (props) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="add Pet">addPet:</label>
+      <div className="col">
+      <label htmlFor="add Pet">Name:</label>
       <input
         id="name"
         type="text"
         onChange={handleChange}
         value={petState.name}
       />
+      </div>
+      <div className="col">
 <label htmlFor="description">Description</label>
   <textarea
     id="description"
     cols="30"
-    rows="10"
+    rows="0"
     onChange={handleChange}
     value={petState.description}></textarea>
 
+      </div>
+
+      <div className="col">
 <label htmlFor="type">Type:</label>
   <input
     type="text"
@@ -48,6 +54,7 @@ const AddPet = (props) => {
     onChange={handleChange}
     value={petState.type}
   />
+  </div>
 <label htmlFor="age">Age:</label>
   <input
     type="number"
@@ -55,22 +62,18 @@ const AddPet = (props) => {
     onChange={handleChange}
     value={petState.age}
   />
-
+<div className="col">
 <label htmlFor="neighborhood">Neighborhood:</label>
   <input
     type="text"
     id="Neighborhood"
     onChange={handleChange}
     value={petState.neighborhood}
-  />
+    />
+</div>
 
-
-      <button type="submit">Pet Added</button>
-
-
-
+      <button type="submit">Add Pet</button>
     </form>
   )
 }
-
 export default AddPet

@@ -10,6 +10,8 @@ import NeighborhoodDetails from './pages/NeighborhoodDetails'
 import About from './pages/About'
 import axios from 'axios'
 import AddPet from './components/AddPet'
+import AdoptPet from './components/AdoptPet'
+
 const App = () => {
   const [neighborhoods, setNeighborhoods] = useState([])
   const [pets, setPets] = useState([])
@@ -47,6 +49,7 @@ const App = () => {
           />
           <Route path="/pets" element={<Pets pets={pets} />} />
           <Route path="/pets/add/:neighborhood" element={<AddPet />} />
+          <Route path="/pets/adopt/:neighborhood" element={<AdoptPet />} />
           <Route path="/pets/:id" element={<PetDetails pets={pets} />} />
         </Routes>
       </main>
