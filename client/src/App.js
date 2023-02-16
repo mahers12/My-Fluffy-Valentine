@@ -11,6 +11,7 @@ import About from './pages/About'
 import axios from 'axios'
 import AddPet from './components/AddPet'
 import AdoptPet from './components/AdoptPet'
+import UpdatePet from './components/UpdatePet'
 
 const App = () => {
   const [neighborhoods, setNeighborhoods] = useState([])
@@ -25,9 +26,16 @@ const App = () => {
     setPets(response.data.pets)
   }
 
+  const UpdatePet = async () => {
+    const response = await axios.update('http://localhost:3001/api/pets')
+    console.log(response.data)
+    UpdatePet(response.data.pets)
+  }
+
   useEffect(() => {
     getNeighborhoods()
     getPets()
+    UpdatePet()
   }, [])
 
   return (
@@ -50,6 +58,7 @@ const App = () => {
           <Route path="/pets" element={<Pets pets={pets} />} />
           <Route path="/pets/add/:neighborhood" element={<AddPet />} />
           <Route path="/pets/adopt/:neighborhood" element={<AdoptPet />} />
+          <Route path="/pets/adopt/:neighborhood" element={<UpdatePet />} />
           <Route path="/pets/:id" element={<PetDetails pets={pets} />} />
         </Routes>
       </main>

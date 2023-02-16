@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import axios from 'axios'
 
-const AddPet = (props) => {
+const UpdatePet = ({pets}) => {
   const initialState = { 
     name: '', 
     description: '',
@@ -11,7 +11,7 @@ const AddPet = (props) => {
     neighborhood: ''
   }
 
-  const [petState, setPetState] = useState(initialState)
+  const [petState, setPetState] = useState(pets)
 
   const handleChange = (event) => {
     setPetState({ ...petState, [event.target.id]: event.target.value })
@@ -19,15 +19,11 @@ const AddPet = (props) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    await axios.post('http://localhost:3001/api/pet', petState)
-    // console.log(petState)
-    setPetState(initialState)
+    await axios.post('http://localhost:3001/api/pets/${pet._id}', petState)
+    getPets()
   }
 
-  const handleDelete = async (event) => {
-    await axios.delete('http://localhost:3001/api/pet', petState)
-  }
-
+ 
   return (
     <form onSubmit={handleSubmit}>
       <div className="col">
@@ -65,7 +61,7 @@ const AddPet = (props) => {
     id="Age"
     onChange={handleChange}
     value={petState.age}
-  />
+  />Í
 <div className="col">
 <label htmlFor="neighborhood">Neighborhood:</label>
   <input
@@ -76,10 +72,8 @@ const AddPet = (props) => {
     />
 </div>
 
-      <button type="submit">Add Pet</button>
-      <button 
-      className="button" type="submit">Delete Pet</button>
+      <button type="submit">Update Pet</button>
     </form>
   )
 }
-export default AddPet
+export default UpdatePet
