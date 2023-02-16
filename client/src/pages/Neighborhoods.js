@@ -9,10 +9,7 @@ const Neighborhoods = (props) => {
       </div>
       <section className="details">
         {props.neighborhoods.map((neighborhood) => (
-          <Link
-            to={`/neighborhoods/${neighborhood._id}`}
-            key={neighborhood._id}
-          >
+          <Link to={`/neighborhood/${neighborhood._id}`} key={neighborhood._id}>
             <Neighborhood neighborhood={neighborhood} />
           </Link>
         ))}
