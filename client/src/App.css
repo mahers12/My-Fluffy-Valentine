@@ -8,21 +8,12 @@
   font-weight: 100;
   font-size: 1rem;
   letter-spacing: 2px;
-  color: grey;
   word-wrap: normal;
 }
 .home p {
   margin: 2%;
   text-align: left;
 }
-
-
-body {
-	background: grey;
-	margin:15px 0 0 0;
-	font-size:12px;
-}
-
 .img-wrapper {
   width: 270px;
   height: 270px;
@@ -32,11 +23,6 @@ body {
 .img-wrapper img {
   width: 250px;
   height: auto;
-}
-body{
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnfTr55tHLV4kxDrXP0PcLOioqHoSsiNH_wXSJhEfjivEeBr7-xjgS9yu8MmBoxm1tiG8&usqp=CAU');
-  background-repeat: no-repeat;
-  background-size:cover;
 }
 
 .details {
@@ -54,7 +40,13 @@ body{
 
 }
 
-
+.neighborhoods-content{
+  
+  background-image: url('https://img.freepik.com/premium-vector/cute-cat-dog-flat-design-illustration_723554-122.jpg?w=2000');
+  background-repeat: no-repeat;
+  background-size:cover;
+  text-align: left;
+}
 
 .about{
   text-align: left;
@@ -75,6 +67,8 @@ button:hover {
 
   nav {
     height: 48px;
+    background-color: #9f9fa4;
+  
 }
 
 nav ul {
@@ -122,12 +116,14 @@ padding: 25px;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-
 }
 
 .pets-content{
   display: flex;
   flex-direction: column;
+  background-image: url('https://media.istockphoto.com/id/1316064480/vector/cute-cat-dog-face-head-set-funny-baby-sad-kitty-puppy-kawaii-animal-white-silhouette-cute.jpg?s=170667a&w=0&k=20&c=S0-brxCWsaAQLLyHuMwYVzj-C87daeEG6kPNKeDpAmg=');
+  background-repeat: no-repeat;
+  background-size:cover
 }
 
 .AddPet .row{
@@ -165,3 +161,10 @@ width: 100%;
 }
 
 
+.flex-col{
+
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2bb8gpEFMMVmEJgxdMD1L_B5o3qFLWnFq8A&usqp=CAU');
+  background-repeat: no-repeat;
+  background-size:contain;
+
+}
