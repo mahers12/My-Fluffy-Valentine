@@ -23,10 +23,10 @@ const PetDetails = (props) => {
           </div>
           <div className="fluff">
             <h3> Name: {pet.name}</h3>
-            <p>{pet.description}</p>
-            <p>{pet.age}</p>
-            <p>{pet.type}</p>
-            <p>{pet.neighborhood.name}</p>
+            <p>Description: {pet.description}</p>
+            <p>Age: {pet.age}</p>
+            <p>Type: {pet.type}</p>
+            <p>Neighborhood: {pet.neighborhood.name}</p>
           </div>
           <Link to={`/pets/${id}/${index}/adopt`}> Start Adoption Process</Link>
           <button onClick={handleDelete}>Pet Adopted</button>
