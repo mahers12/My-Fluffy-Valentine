@@ -2,41 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 body {
 	background: grey;
 	margin:15px 0 0 0;
@@ -44,26 +9,29 @@ body {
 }
 
 .img-wrapper {
-  width: 10px;
-  height: 10px;
+  width: 270px;
+  height: 270px;
+  margin: 8px;
 }
 
+.img-wrapper img {
+  width: 250px;
+  height: auto;
+}
 .card {
-  background-image: url('https://thumbs.dreamstime.com/b/cartoon-cute-valentines-day-sweet-white-cat-dog-hearts-vector-cartoon-cute-valentines-day-cat-dog-hearts-vector-168110022.jpg');
-
-  width: 400px;
-  margin: 0 auto;
+  width: 50;
   font-family: "Helvetica Neue", "Arial", sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 1rem;
   letter-spacing: 2px;
-  color: grey
+  color: grey;
+  word-wrap: normal;
 }
 body{
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnfTr55tHLV4kxDrXP0PcLOioqHoSsiNH_wXSJhEfjivEeBr7-xjgS9yu8MmBoxm1tiG8&usqp=CAU');
   background-repeat: no-repeat;
-  background-size: 100%
+  background-size:cover;
 }
 
 .details {
@@ -80,18 +48,6 @@ body{
   align-self:center
 
 }
-.info-wrapper {
-  flex-wrap: wrap;
-}
-
-.info-wrapper {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-col {
-  box-sizing:content-box
-}
 
 .pets-content{
   display: grid;
@@ -105,10 +61,9 @@ col {
   text-align: left;
   text-shadow: #61dafb;
   font-size:x-large;
-  padding-left: 20px;
+  padding:0 10px 0 20px;
   justify-content: space-between;
 }
-
 
 button:hover {
   color: #0f0e0f;

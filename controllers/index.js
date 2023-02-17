@@ -16,7 +16,7 @@ const createPet = async (req, res) => {
 }
 const getAllPets = async (req, res) => {
   try {
-    const pets = await Pet.find()
+    const pets = await Pet.find().populate('neighborhood')
     return res.status(200).json({ pets })
   } catch (error) {
     return res.status(500).send(error.message)
@@ -26,7 +26,7 @@ const getAllPets = async (req, res) => {
 const getPetById = async (req, res) => {
   try {
     const { id } = req.params
-    const pet = await Pet.findById(id)
+    const pet = await Pet.findById(id).populate('neighborhood')
     if (pet) {
       return res.status(200).json({ pet })
     }
@@ -62,7 +62,7 @@ const deletePet = async (req, res) => {
 
 const getAllNeighborhoods = async (req, res) => {
   try {
-    const neighborhoods = await Neighborhood.find()
+    const neighborhoods = await Neighborhood.find().populate('pets')
     return res.status(200).json({ neighborhoods })
   } catch (error) {
     return res.status(500).send(error.message)

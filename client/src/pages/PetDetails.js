@@ -1,5 +1,6 @@
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { useEffect } from 'react'
 
 const PetDetails = (props) => {
   const { id, index } = useParams()
@@ -12,17 +13,25 @@ const PetDetails = (props) => {
     let response = await axios.delete(`http://localhost:3001/api/pets/${id}`)
     navigate('/')
   }
+  useEffect(() => {}, [pet])
   return (
-    <div className="grid">
-      <div className="img-wrapper">
-        <img src={pet.image} alt="PetDetails" />
-      </div>
-      <div className="info-wrapper flex-row">
-        <h3>{pet.name}</h3>
-      </div>
-      <Link to={`/pets/${id}/${index}/adopt`}> Start Adoption Process</Link>
-      <button onClick={handleDelete}>Pet Adopted</button>
-    </div>
+    <>
+      {pet && (
+        <div className="grid">
+          <div className="img-wrapper">
+            <img src={pet.image} alt="PetDetails" />
+          </div>
+          <div className="info-wrapper flex-row">
+            <h3>{pet.name}</h3>
+            <p>{pet.description}</p>
+            <p>{pet.age}</p>
+            <p>{pet.neighborhood.name}</p>
+          </div>
+          <Link to={`/pets/${id}/${index}/adopt`}> Start Adoption Process</Link>
+          <button onClick={handleDelete}>Pet Adopted</button>
+        </div>
+      )}
+    </>
   )
 }
 
