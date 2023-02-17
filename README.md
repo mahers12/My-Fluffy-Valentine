@@ -33,6 +33,11 @@ My-Fluffy-Valentine is a webpage meant to match future pet parents with shelter 
 
 ## **_Credits:_**
 
+<a href="https://www.google.com/" target="_blank">Google Images</a>
+<a href="https://www.humanesociety.org/resources/top-reasons-adopt-pet">The Humane Society</a>
+<a href="https://www.w3schools.com/css/css_grid.asp">The Humane Society</a>
+<a href="https://www.geeksforgeeks.org/css-cheat-sheet-a-basic-guide-to-css/#Background%20Properties">The Humane Society</a>
+
 ## **_links to Social Media_**
 
 [Github](https://github.com/mahers12)|| [Linkedin](https://www.linkedin.com/in/sarah-maher-8a6865255/)
