@@ -46,6 +46,7 @@ My-Fluffy-Valentine is a webpage meant to match future pet parents with shelter 
 <a href="https://maxfund.org/">MaxFund Animal Adoption Center</a> ||
 
 <a href="https://www.ddfl.org/">Dumb Friends League</a>
+<a href="https://imgur.com/" imgure: Photo Editing>
 
 ## **_links to Social Media_**
 
