@@ -21,10 +21,9 @@ My-Fluffy-Valentine is a webpage meant to match future pet parents with shelter 
 
 ## **_Final Project Photos:_**
 
-![Cute_Pets](https://www.readersdigest.com.au/wp-content/uploads/2021/02/05-puppy-and-kitten-GettyImages-71919537.jpg)
+![Cute_Pets](https://i.imgur.com/h9BfxAr.png)
 
-
-![Cute_Pets2](https://www.rd.com/wp-content/uploads/2021/03/GettyImages-987491478.jpg)
+![Cute_Pets2](https://i.imgur.com/RDXrzhW.png)
 
 ## **_Future Updates:_**
 
