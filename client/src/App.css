@@ -37,3 +37,24 @@
   }
 }
 
+body {
+	background: grey;
+	margin:15px 0 0 0;
+	font-size:12px;
+}
+
+.img-wrapper {
+  width: 10px;
+  height: 10px;
+}
+
+body {
+  background-image: url('https://thumbs.dreamstime.com/b/cartoon-cute-valentines-day-sweet-white-cat-dog-hearts-vector-cartoon-cute-valentines-day-cat-dog-hearts-vector-168110022.jpg');
+}
+
+.card{
+
+  font: url=("https://fonts.googleapis.com/css?family=Sofia")
+
+
+}
