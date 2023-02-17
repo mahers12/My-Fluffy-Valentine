@@ -33,10 +33,19 @@ My-Fluffy-Valentine is a webpage meant to match future pet parents with shelter 
 
 ## **_Credits:_**
 
-<a href="https://www.google.com/" target="_blank">Google Images</a>
-<a href="https://www.humanesociety.org/resources/top-reasons-adopt-pet">The Humane Society</a>
-<a href="https://www.w3schools.com/css/css_grid.asp">The Humane Society</a>
-<a href="https://www.geeksforgeeks.org/css-cheat-sheet-a-basic-guide-to-css/#Background%20Properties">The Humane Society</a>
+<a href="https://www.istockphoto.com/search/2/image?phrase=cute%20dog%20and%20cat%20together%20animated">iStock Images</a> ||
+
+<a href="https://www.w3schools.com/css/css_grid.asp">W3 Schools: CSS Grid Layout Module</a> ||
+
+<a href="https://www.geeksforgeeks.org/css-cheat-sheet-a-basic-guide-to-css/#Background%20Properties">CSS Cheat Sheet – A Basic Guide to CSS</a> ||
+
+<a href="https://www.humanesociety.org/resources/top-reasons-adopt-pet">The Humane Society</a> ||
+
+<a href="https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Animal-Shelter">Denver Animal Shelter</a> ||
+
+<a href="https://maxfund.org/">MaxFund Animal Adoption Center</a> ||
+
+<a href="https://www.ddfl.org/">Dumb Friends League</a>
 
 ## **_links to Social Media_**
 
