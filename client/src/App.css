@@ -93,3 +93,11 @@ col {
   grid-gap: 15px;
   align-self:center
 }
+
+.about{
+  text-align: left;
+  text-shadow: #61dafb;
+  font-size:x-large;
+  padding-left: 20px;
+  justify-content: space-between;
+}
