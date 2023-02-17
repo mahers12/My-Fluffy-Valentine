@@ -9,7 +9,7 @@ const NeighborhoodDetails = (props) => {
       <div className="img-wrapper">
         <img src={neighborhood[0].picture} alt="NeighborhoodDetails" />
       </div>
-      <div className="info-wrapper flex-row">
+      <div className="info-wrapper">
         <h3>{neighborhood[0].name}</h3>
       </div>
     </div>

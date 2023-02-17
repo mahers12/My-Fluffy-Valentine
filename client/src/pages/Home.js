@@ -20,7 +20,6 @@ const Home = () => {
         user can also choose to sponsor a pet, or donate to a shelter of their
         choosing.
       </body>
-      <section className="container-grid"></section>
     </div>
   )
 }

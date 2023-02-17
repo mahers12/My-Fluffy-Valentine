@@ -48,13 +48,48 @@ body {
   height: 10px;
 }
 
-body {
+.card {
   background-image: url('https://thumbs.dreamstime.com/b/cartoon-cute-valentines-day-sweet-white-cat-dog-hearts-vector-cartoon-cute-valentines-day-cat-dog-hearts-vector-168110022.jpg');
+
+  width: 400px;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: grey
+}
+body{
+  background-image: url('https://thumbs.dreamstime.com/b/cartoon-cute-valentines-day-sweet-white-cat-dog-hearts-vector-cartoon-cute-valentines-day-cat-dog-hearts-vector-168110022.jpg');
+
 }
 
-.card{
+.details {
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows:100px, 200px;
+    grid-gap: 1rem;
+}
+.grid {
+  display: grid;
+  grid:0%;
+  grid-auto-flow: inherit;
+  grid-gap: 15px;
+  align-self:center
 
-  font: url=("https://fonts.googleapis.com/css?family=Sofia")
+}
+.info-wrapper {
+  flex-wrap: wrap;
+}
+col {
+  box-sizing:content-box
+}
 
-
+.pets-content{
+  display: grid;
+  grid: 100%;
+  grid-auto-flow:column;
+  grid-gap: 15px;
+  align-self:center
 }
