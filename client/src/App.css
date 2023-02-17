@@ -1,6 +1,21 @@
 .App {
   text-align: center;
 }
+.home {
+  width: 50;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: grey;
+  word-wrap: normal;
+}
+.home p {
+  margin: 2%;
+  text-align: left;
+}
+
 
 body {
 	background: grey;
@@ -18,16 +33,6 @@ body {
   width: 250px;
   height: auto;
 }
-.card {
-  width: 50;
-  font-family: "Helvetica Neue", "Arial", sans-serif;
-  font-style: italic;
-  font-weight: 100;
-  font-size: 1rem;
-  letter-spacing: 2px;
-  color: grey;
-  word-wrap: normal;
-}
 body{
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnfTr55tHLV4kxDrXP0PcLOioqHoSsiNH_wXSJhEfjivEeBr7-xjgS9yu8MmBoxm1tiG8&usqp=CAU');
   background-repeat: no-repeat;
@@ -40,7 +45,7 @@ body{
     grid-template-rows:100px, 200px;
     grid-gap: 1rem;
 }
-.grid {
+.neighborhooddetails {
   display: grid;
   grid:0%;
   grid-auto-flow: inherit;
@@ -49,20 +54,17 @@ body{
 
 }
 
-.pets-content{
-  display: grid;
-  grid: 100%;
-  grid-auto-flow:column;
-  grid-gap: 15px;
-  align-self:center
-}
+
 
 .about{
   text-align: left;
-  text-shadow: #61dafb;
-  font-size:x-large;
+  font-size:large;
   padding:0 10px 0 20px;
-  justify-content: space-between;
+
+}
+.about ul li {
+  margin:15px;
+
 }
 
 button:hover {
@@ -95,3 +97,71 @@ nav li a {
 nav li a:hover {
     color: #0804e4;
 }
+
+
+.fluff {
+  background-color: #bbc4c7;
+  color: #0f0e0f;
+margin: 2%;
+border-radius: 25px;
+padding: 25px;
+}
+.pet-details img{
+  margin: 2%;
+  border-radius: 25px;
+  
+
+}
+.pet-details button{
+  margin-left: 15px;
+}
+
+.pets-content section{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.pets-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.AddPet .row{
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+}
+
+.AddPet .row label{
+  width: 25%;
+  margin: 15px;
+}
+
+.AddPet .row input, .AddPet .row select{
+  width: 75%;
+  margin: 15px;
+}
+
+.pet-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 10px;
+  border: 1px black solid;
+  border-radius: 25px;
+  background-color: beige;
+}
+
+
+.pet-card .img-wrapper{
+max-height: 75%;
+width: 100%;
+
+}
+
+

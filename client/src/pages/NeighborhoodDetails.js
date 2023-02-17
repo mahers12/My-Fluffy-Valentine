@@ -5,7 +5,7 @@ const NeighborhoodDetails = (props) => {
   const neighborhood = props.neighborhoods.filter((word) => word._id === id)
   console.log(neighborhood)
   return (
-    <div className="grid">
+    <div className="neighborhooddetails">
       <div className="img-wrapper">
         <img src={neighborhood[0].picture} alt="NeighborhoodDetails" />
       </div>

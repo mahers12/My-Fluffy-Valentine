@@ -17,14 +17,15 @@ const PetDetails = (props) => {
   return (
     <>
       {pet && (
-        <div className="grid">
+        <div className="pet-details">
           <div className="img-wrapper">
             <img src={pet.image} alt="PetDetails" />
           </div>
-          <div className="info-wrapper flex-row">
-            <h3>{pet.name}</h3>
+          <div className="fluff">
+            <h3> Name: {pet.name}</h3>
             <p>{pet.description}</p>
             <p>{pet.age}</p>
+            <p>{pet.type}</p>
             <p>{pet.neighborhood.name}</p>
           </div>
           <Link to={`/pets/${id}/${index}/adopt`}> Start Adoption Process</Link>

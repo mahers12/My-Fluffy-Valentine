@@ -25,8 +25,8 @@ const AddPet = (props) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="col">
+    <form className="AddPet" onSubmit={handleSubmit}>
+      <div className="row">
         <label htmlFor="name">Name:</label>
         <input
           id="name"
@@ -35,7 +35,7 @@ const AddPet = (props) => {
           value={petState.name}
         />
       </div>
-      <div className="col">
+      <div className="row">
         <label htmlFor="description">Description</label>
         <textarea
           id="description"
@@ -46,7 +46,7 @@ const AddPet = (props) => {
         ></textarea>
       </div>
 
-      <div className="col">
+      <div className="row">
         <label htmlFor="type">Type:</label>
         <input
           type="text"
@@ -56,7 +56,7 @@ const AddPet = (props) => {
         />
       </div>
 
-      <div className="col">
+      <div className="row">
         <label htmlFor="image">Image:</label>
         <input
           type="text"
@@ -65,14 +65,16 @@ const AddPet = (props) => {
           value={petState.image}
         />
       </div>
-      <label htmlFor="age">Age:</label>
-      <input
-        type="number"
-        id="age"
-        onChange={handleChange}
-        value={petState.age}
-      />
-      <div className="col">
+      <div className="row">
+        <label htmlFor="age">Age:</label>
+        <input
+          type="number"
+          id="age"
+          onChange={handleChange}
+          value={petState.age}
+        />
+      </div>
+      <div className="row">
         <label htmlFor="neighborhood">Neighborhood:</label>
         <select
           id="neighborhood"

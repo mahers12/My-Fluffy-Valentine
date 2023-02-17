@@ -1,8 +1,8 @@
 const Home = () => {
   return (
-    <div className="card">
+    <div className="home">
       <h1> My Fluffy Valentine</h1>
-      <body>
+      <p>
         Are you tired of scrolling through troves of online matches without
         having any luck? Are you exhausted at the mere idea of getting ready for
         yet another mediocre date? Are you fretting spending another night on
@@ -19,7 +19,7 @@ const Home = () => {
         also display the shelter information where the pets can be adopted. The
         user can also choose to sponsor a pet, or donate to a shelter of their
         choosing.
-      </body>
+      </p>
     </div>
   )
 }
